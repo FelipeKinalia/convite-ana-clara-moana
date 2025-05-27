@@ -9,22 +9,21 @@
 </head>
 <body>
 
-<!-- 🎵 Música de fundo -->
+<!-- 🎵 Música de fundo corrigida -->
 <audio id="bg-music" autoplay loop>
-    <source src="musica/moana-song.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio.
-    </audio>
-    <button id="play-btn">🔊 Tocar Música</button>
+<source src="musica/moana-song.mp3" type="audio/mpeg">
+Seu navegador não suporta áudio.
+</audio>
+<button id="play-btn">🔊 Tocar Música</button>
 <script>
 const music = document.getElementById('bg-music');
 const playBtn = document.getElementById('play-btn');
 
 playBtn.addEventListener('click', () => {
 music.play();
-playBtn.style.display = 'none'; // Esconde o botão após tocar
+playBtn.style.display = 'none';
 });
 </script>
-
 
 <header class="convite-titulo">
 <h1>🌊 Você foi escolhido pelo oceano!</h1>
@@ -32,8 +31,8 @@ playBtn.style.display = 'none'; // Esconde o botão após tocar
 </header>
 
 <section class="personagens fade-in">
-    <img src="foto/ana desenho.png" alt="Moana" />
-        </section>
+<img src="foto/ana desenho.png" alt="Moana" />
+</section>
 
 <section class="info fade-in">
 <h2>📍 Informações da Festa</h2>
@@ -45,14 +44,14 @@ playBtn.style.display = 'none'; // Esconde o botão após tocar
 </section>
 
 <section class="mapa fade-in">
-    <a href="https://www.google.com/maps/place/R.+Santa+Cruz,+1974+-+Vila+Mariana,+São+Paulo+-+SP" target="_blank">
-    🗺️ Ver local no Google Maps
-    <a href= "https://forms.gle/DwH1fi2VU3LL2LT48" target="_blank">
-        📋 Confirmar presença no Google Forms
-        </a>
-
-      </div>
-    </section>
+<a href="https://www.google.com/maps/place/R.+Santa+Cruz,+1974+-+Vila+Mariana,+São+Paulo+-+SP" target="_blank">
+🗺️ Ver local no Google Maps
+</a>
+<br>
+<a href="https://forms.gle/DwH1fi2VU3LL2LT48" target="_blank">
+📋 Confirmar presença no Google Forms
+</a>
+</section>
 
 <!-- BOTÃO PARA ABRIR MODAL -->
 <section style="text-align: center; margin: 40px 0;">
@@ -66,9 +65,9 @@ playBtn.style.display = 'none'; // Esconde o botão após tocar
 <h3 style="margin-top: 0; text-align: center; color: #2a9d8f;">🎉 Sugestões de Presentes</h3>
 <ul style="padding-left: 20px; text-align: left;">
 <li>Roupinhas tamanho 3</li>
-<li>tenis tamanho 22/23</li>
+<li>Tênis tamanho 22/23</li>
 <li>Livros infantis</li>
-<li>Brinquedos educativos(pequenos)</li>
+<li>Brinquedos educativos (pequenos)</li>
 <li>Personagens da Disney (Moana, Hei Hei, Pua)</li>
 </ul>
 </div>
@@ -78,6 +77,7 @@ playBtn.style.display = 'none'; // Esconde o botão após tocar
 <p>✨ Esperamos você para uma jornada inesquecível! 🌺</p>
 </footer>
 
+<!-- Animações de entrada -->
 <script>
 const elements = document.querySelectorAll('.fade-in');
 const observer = new IntersectionObserver((entries) => {
@@ -91,8 +91,7 @@ entry.target.classList.add('visible');
 elements.forEach(el => observer.observe(el));
 </script>
 
-
-
+<!-- Script do modal -->
 <script>
 const modal = document.getElementById("modalPresentes");
 const abrirBtn = document.getElementById("abrirModal");
@@ -113,8 +112,10 @@ modal.style.display = "none";
 };
 </script>
 
+<!-- Rodapé com créditos -->
 <footer style="background-color: #67cedb; color: white; text-align: center; padding: 15px 5px; margin-top: 20px; font-size: 0.9em;">
 © 2025 | Esta página foi idealizada, desenvolvida e publicada por <strong>Felipe Ferreira</strong>, com muito carinho para o aniversário de Ana Clara. Todos os direitos reservados.
 </footer>
+
 </body>
 </html>
